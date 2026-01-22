@@ -23,15 +23,37 @@ public class Main{
         Line l5 = new Line(800, 700, 800, 200);
         Line l6 = new Line(800, 200, 200, 200);
         Line l7 = new Line(800, 400, 200, 400);
-        standardCupMaker(67,67);
+        
+        //draw lemons
+        int startCoordX =500;
+        Oval lemon3 = new Oval(startCoordX,590,75,60);
+        lemon3.setFillColor(255,255,0);
+        Oval lemon1 = new Oval(startCoordX-25,640,75,60);
+        lemon1.setFillColor(255,255,0);
+        Oval lemon2 = new Oval(startCoordX+25,640,75,60);
+        lemon2.setFillColor(255,255,0);
+        
+        //draw icebox
+        Rectangle icebox = new Rectangle(210,750,100,150);
+        icebox.setFillColor(16,152,247);
+        
+        
+        //standardCupMaker(67,67);
         
 	}
+	
+	
+	
+	
+	/*
 	public static void standardCupMaker(int topLeftX, int topLeftY){
 			int uDiameter = 40;
-			Oval o2 = new Oval(topLeftX,topLeftY,uDiameter,40);
-			Oval o1 = new Oval(topLeftX+10, topLeftY+100, uDiameter-5, 20);
-			Line l8 = new Line(topLeftX,topLeftY+20,topLeftX+10,topLeftY+100);
-			Line l9 = new Line(topLeftX+uDiameter-10,topLeftY+100,topLeftX+uDiameter,topLeftY);
+			int height = 100;
+			Oval o2 = new Oval(topLeftX,topLeftY,uDiameter,uDiameter-10);
+			Oval o1 = new Oval(topLeftX+10, topLeftY+height, uDiameter-5, 20);
+			Line l8 = new Line(topLeftX,topLeftY+20,topLeftX+10,topLeftY+height);
+			Line l9 = new Line(topLeftX+uDiameter-10,topLeftY+100,topLeftX+uDiameter,topLeftY+20);
 			
 		}
+		*/
 }
