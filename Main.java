@@ -5,24 +5,38 @@ public class Main{
 	public static void main (String[] args){
 		// create pad, lemonade stand, and add a water cup
 		Pad pad = new Pad(1000, 1000);
+		Image background = new Image("house.jpg",0,0,1000,1000);
 		//Image im1 = new Image("cups.jfif", 600, 600, 100, 100);
         Image im2 = new Image("LemonadeBanner.jpg", 200, 200, 600, 200);
         //Image im3 = new Image("ice.jpg",300,550,100,150 );
         //Image im4 = new Image("lemons.png", 425, 600, 100, 150);
         //Image im5 = new Image("sugar.jpg", 200, 750, 150,150);
         Oval o1 = new Oval(660, 660, 70, 40);
+        o1.setFillColor(0,0,0,0);
+        o1.setStrokeWidth(10);
         Line l8 = new Line(650,550,660,680);
+        l8.setStrokeWidth(10);
         Line l9 = new Line(740,550,730,680);
+        l9.setStrokeWidth(10);
         Oval o2 = new Oval(650,530,90,40);
+        o2.setFillColor(0,0,0,0);
+        o2.setStrokeWidth(10);
         
         //below lines have the general lemonade stand shape
         Line l1 = new Line(200, 700, 800, 700);
+        l1.setStrokeWidth(20);
         Line l2 = new Line(200, 700, 200, 900);
+        l2.setStrokeWidth(20);
         Line l3 = new Line(800, 700, 800, 900);
+        l3.setStrokeWidth(20);
         Line l4 = new Line(200, 700, 200, 200);
+        l4.setStrokeWidth(20);
         Line l5 = new Line(800, 700, 800, 200);
+        l5.setStrokeWidth(20);
         Line l6 = new Line(800, 200, 200, 200);
+        l6.setStrokeWidth(20);
         Line l7 = new Line(800, 400, 200, 400);
+        l7.setStrokeWidth(20);
         
         //draw lemons
         int startCoordX =500;
@@ -34,9 +48,15 @@ public class Main{
         lemon2.setFillColor(255,255,0);
         
         //draw icebox
-        Rectangle icebox = new Rectangle(210,750,100,150);
-        icebox.setFillColor(16,152,247);
+        Rectangle iceBox = new Rectangle(210,750,100,150);
+        iceBox.setFillColor(16,152,247);
         
+        Text ice = new Text("Ice",235,800,35);
+        
+        Rectangle sugarBox = new Rectangle(240,550,100,150);
+        sugarBox.setFillColor(224,76,76);
+        
+        Text sugar = new Text("Sugar",265,600,20);
         
         //standardCupMaker(67,67);
         
