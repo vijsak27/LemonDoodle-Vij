@@ -5,7 +5,7 @@ public class Main{
 	public static void main (String[] args){
 		// create pad, lemonade stand, and add a water cup
 		Pad pad = new Pad(1000, 1000);
-		Image background = new Image("house.jpg",0,0,1000,1000);
+		Image background = new Image("output-onlinepngtools.png",0,0,1000,1000);
 		//Image im1 = new Image("cups.jfif", 600, 600, 100, 100);
         Image im2 = new Image("LemonadeBanner.jpg", 200, 200, 600, 200);
         //Image im3 = new Image("ice.jpg",300,550,100,150 );
